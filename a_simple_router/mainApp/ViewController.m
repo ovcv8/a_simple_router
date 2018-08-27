@@ -24,7 +24,7 @@
     obj.callback = ^(id params) {
         NSLog(@"%@", params);
     };
-    [self presentViewController:obj.serverBody animated:YES completion:nil];
-}
+    [obj showViewController:self showStyle:OHGShowStyleCustom];
+    }
 
 @end

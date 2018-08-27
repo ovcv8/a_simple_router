@@ -11,12 +11,24 @@
 #define MoudleProtocol_ServerInterface @"SI"
 #endif
 
+typedef NS_ENUM(NSUInteger, OHGShowStyle) {
+    OHGShowStylePresent,
+    OHGShowStyleModal,
+    OHGShowStyleCustom,
+};
+
 @protocol BaseModule <NSObject>
 @required
 // server body
-@property(nonatomic, weak) __kindof UIViewController *serverBody;
+//@property(nonatomic, strong) __kindof UIViewController *serverBody;
+
+- (void) showViewController:(UIViewController * _Nonnull) presentingController
+                  showStyle:(OHGShowStyle) style;
 
 @optional
+@property(nonatomic, assign, class) NSInteger allocCount;
+@property(nonatomic, assign, class) NSInteger deallocCount;
+
 // callback
 @property(nonatomic, copy) void (^callback) (id params);
 

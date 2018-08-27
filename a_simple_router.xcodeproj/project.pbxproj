@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C83B09E211499F2002809C2 /* UIViewController+Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C83B09D211499F2002809C2 /* UIViewController+Interface.m */; };
 		8C9AFD312111939000C1DECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AFD2F2111939000C1DECA /* Main.storyboard */; };
 		8C9AFD332111939200C1DECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AFD322111939200C1DECA /* Assets.xcassets */; };
 		8C9AFD362111939200C1DECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AFD342111939200C1DECA /* LaunchScreen.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C83B09C211499F2002809C2 /* UIViewController+Interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Interface.h"; sourceTree = "<group>"; };
+		8C83B09D211499F2002809C2 /* UIViewController+Interface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Interface.m"; sourceTree = "<group>"; };
 		8C9AFD262111939000C1DECA /* a_simple_router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a_simple_router.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9AFD302111939000C1DECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C9AFD322111939200C1DECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				8C9AFD45211196B100C1DECA /* AppDelegate.m */,
 				8C9AFD47211196B100C1DECA /* ViewController.h */,
 				8C9AFD43211196B100C1DECA /* ViewController.m */,
+				8C83B09C211499F2002809C2 /* UIViewController+Interface.h */,
+				8C83B09D211499F2002809C2 /* UIViewController+Interface.m */,
 			);
 			path = mainApp;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			files = (
 				8C9AFD572111971700C1DECA /* ModuleAViewController.m in Sources */,
 				8C9AFD50211196B200C1DECA /* main.m in Sources */,
+				8C83B09E211499F2002809C2 /* UIViewController+Interface.m in Sources */,
 				8C9AFD53211196B200C1DECA /* OHGRouter.m in Sources */,
 				8C9AFD4F211196B200C1DECA /* ViewController.m in Sources */,
 				8C9AFD54211196B200C1DECA /* ModuleASI.m in Sources */,

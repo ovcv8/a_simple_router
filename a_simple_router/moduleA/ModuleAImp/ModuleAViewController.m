@@ -8,6 +8,8 @@
 
 #import "ModuleAViewController.h"
 
+@import Social;
+
 @interface ModuleAViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *name;
 
@@ -23,6 +25,8 @@
 - (IBAction)back:(id)sender {
     !self.interface.callback ?: self.interface.callback(@"我没了");
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+
 }
 
 - (void)dealloc {

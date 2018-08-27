@@ -7,6 +7,9 @@
 #import <Foundation/Foundation.h>
 #import "MoudleProtocol.h"
 
-@interface ModuleASI : NSObject <ModuleA>
+@interface ModuleASI : NSObject
+<ModuleA,
+UIViewControllerTransitioningDelegate,
+UIViewControllerAnimatedTransitioning>
 
 @end
