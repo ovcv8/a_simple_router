@@ -19,18 +19,16 @@ typedef NS_ENUM(NSUInteger, OHGShowStyle) {
 
 @protocol BaseModule <NSObject>
 @required
-// server body
-//@property(nonatomic, strong) __kindof UIViewController *serverBody;
-
 - (void) showViewController:(UIViewController * _Nonnull) presentingController
                   showStyle:(OHGShowStyle) style;
 
 @optional
 @property(nonatomic, assign, class) NSInteger allocCount;
 @property(nonatomic, assign, class) NSInteger deallocCount;
-
 // callback
 @property(nonatomic, copy) void (^callback) (id params);
+// 如果是自定义呈现方式，需要定义下面属性
+@property(nonatomic, weak) id<UIViewControllerTransitioningDelegate> transitionDelegate;
 
 @end
 
